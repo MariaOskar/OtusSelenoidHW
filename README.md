@@ -32,8 +32,8 @@
  
 ### OtusTestNG:
 
-<Подготовка тестов к использованию в многопоточном режиме
-https://github.com/MariaOskar/OtusTestNG/commit/c96fdd557914f4c5196b4d201a6d19c97e1673d3>
+Подготовка тестов к использованию в многопоточном режиме
+<https://github.com/MariaOskar/OtusTestNG/commit/c96fdd557914f4c5196b4d201a6d19c97e1673d3>
 
 Интеграция отчетов Allure
 <https://github.com/MariaOskar/OtusTestNG/commit/1884d6118cd1aefe490dddaa04979013f768a333>
@@ -55,12 +55,30 @@ SELENOID
 ![Установка Docker на Windows](https://github.com/MariaOskar/OtusSelenoidHW/raw/master/docker_windows.JPG)
 <https://github.com/MariaOskar/OtusSelenoidHW/raw/master/docker_windows.JPG>
 
+Для выполнения задания было решено использовать Linux.
+Для этого:
+* был установлен VirtualBox
+* была создана виртуальная машина
+* на виртуальную машину была установлена последняя стабильная версия Ubuntu
+
 ### Установка Selenoid на Linux
+
+Установка docker на Linux е вызвала никаких проблем.
+Инсталяция производилась согласно руководству: <https://docs.docker.com/install/linux/docker-ce/ubuntu/>
+
+Замечание:
+При установке Configuration Manager, возникли проблемы из-за блокировки ряда запросов к GitHub антивирусом Kaspersky.
+На время установки экраны антивируса пришлось отключить.
+
+Ниже показан запуск Selenoid и загрузка браузеров.
 
 ![Установка Selenoid на Linux](https://github.com/MariaOskar/OtusSelenoidHW/raw/master/selenoid_install.JPG)
 <https://github.com/MariaOskar/OtusSelenoidHW/raw/master/selenoid_install.JPG>
 
 ### Проброс портов в VirtualBox
+Для обращения к Selenoid из родительской ОС (Windows) пришлось "прокинуть порты" в настройках сети виртуальной машины.
+После чего можно было бы обратиться к Selenoid, расположенному в гостевой ОС(Ubuntu).
+Это необходимо т.к. Jenkins установлен на Windows, а также на Windows ведётся разработка тестов.
 
 ![Проброс портов в VirtualBox](https://github.com/MariaOskar/OtusSelenoidHW/raw/master/ports.JPG)
 <https://github.com/MariaOskar/OtusSelenoidHW/raw/master/ports.JPG>
