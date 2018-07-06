@@ -63,7 +63,7 @@ SELENOID
 
 ### Установка Selenoid на Linux
 
-Установка docker на Linux е вызвала никаких проблем.
+Установка docker на Linux не вызвала никаких проблем.
 Инсталяция производилась согласно руководству: <https://docs.docker.com/install/linux/docker-ce/ubuntu/>
 
 Замечание:
@@ -80,15 +80,16 @@ SELENOID
 После чего можно было бы обратиться к Selenoid, расположенному в гостевой ОС(Ubuntu).
 Это необходимо т.к. Jenkins установлен на Windows, а также на Windows ведётся разработка тестов.
 
+* Т.к. на Windows порт 8080 уже был занят сервисом Jenkins, для Selenoid в Windows был указан порт 8787, после чего при переходе по адресу http://127.0.0.1:8787/ в Windows мы могли увидеть веб-интерфейс Selenoid.
+* Порт 4444 оставили нетронутым. И в Windows и в Linux по адресу http://127.0.0.1:4444/wd/hub отвечал один и тот же сервис.
+
 ![Проброс портов в VirtualBox](https://github.com/MariaOskar/OtusSelenoidHW/raw/master/ports.JPG)
 <https://github.com/MariaOskar/OtusSelenoidHW/raw/master/ports.JPG>
 
-### Выполнение тестов на Selenoid
-
-![Выполнение тестов на Selenoid](https://github.com/MariaOskar/OtusSelenoidHW/raw/master/linux.JPG)
-<https://github.com/MariaOskar/OtusSelenoidHW/raw/master/linux.JPG>
 
 ### Запуск тестов в многопоточном режиме
+
+Выполнение тестов в 3 потока на Selenoid
 
 ![Выполнение тестов на Selenoid](https://github.com/MariaOskar/OtusSelenoidHW/raw/master/selenoid.JPG)
 <https://github.com/MariaOskar/OtusSelenoidHW/raw/master/selenoid.JPG>
