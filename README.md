@@ -95,10 +95,15 @@ SELENOID
 
 ### VNC
 
+Подключение по протоколу VNC к контейнеру и просмотр хода выполнения теста.
+
 ![VNC](https://github.com/MariaOskar/OtusSelenoidHW/raw/master/selenoid-vnc.JPG)
 <https://github.com/MariaOskar/OtusSelenoidHW/raw/master/selenoid-vnc.JPG>
 
 ### Отчёт проекта OtusTestNG
+
+Отчёт Allure проекта OtusTestNG
+В данный отчёт помимо оформления заказа на blazedemo.com также входят фиктивные тесты и тесты написанные на основе сайта http://automationpractice.com
 
 ![Отчёт проекта OtusTestNG](https://github.com/MariaOskar/OtusSelenoidHW/raw/master/testng.JPG)
 <https://github.com/MariaOskar/OtusSelenoidHW/raw/master/testng.JPG>
@@ -106,10 +111,14 @@ SELENOID
 
 ### Таймлайн проекта OtusTestNG
 
+В данном проекте многопоточный режим конфигурировался с помощью testng.xml.
+
 ![Timeline1](https://github.com/MariaOskar/OtusSelenoidHW/raw/master/timeline1.JPG)
 <https://github.com/MariaOskar/OtusSelenoidHW/raw/master/timeline1.JPG>
 
 ### Таймлайн проекта OtusJDI
+
+В данном проекте многопоточный режим конфигурировался с помощью pom.xml.
 
 ![Timeline2](https://github.com/MariaOskar/OtusSelenoidHW/raw/master/timeline2.JPG)
 <https://github.com/MariaOskar/OtusSelenoidHW/raw/master/timeline2.JPG>
